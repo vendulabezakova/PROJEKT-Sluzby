@@ -1,0 +1,271 @@
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FAFAFA;
+    color: #8B8B8B;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0 auto;
+    padding: 60px 20px;
+    width: 500px;
+}
+
+
+/* Intro */
+
+.intro {
+    text-align: center;
+}
+
+.intro-img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    color: #000000;
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.pruh {
+    border: 1px solid #407BFF;
+    background-color: #407BFF;
+    width: 60px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.tlacika {
+    margin: 0 auto;
+
+}
+
+.tlacitko1 {
+    background-color: #407BFF;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.tlacitko2 {
+    background-color: #8B8B8B;
+}
+.tlacitko1,
+.tlacitko2 {
+    border-radius: 40px;
+    padding: 10px 30px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Služby */
+
+h2 {
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.sluzby-cestovni {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.obsah-ramecek {
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+    margin: 15px auto ;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px #407BFF1F;
+}
+
+.ikona {
+    margin: 20px 30px 20px 20px;
+}
+
+.ramecek p {
+    font-size: 13px;
+}
+
+.ramecky1,
+.ramecky2 {
+    margin-top: 30px;
+}
+
+/* Služby delegátů */
+
+.sluzby-delegatu {
+    text-align: center;
+    margin-top: 60px;
+}
+
+
+    
+@media screen and (min-width: 640px) {
+
+    body {
+        width: 770px;
+    }
+
+    .text {
+        width: 550px;
+        margin: 0 auto;
+    }
+
+/* Intro */
+
+   .tlacitko1,
+   .tlacitko2 {
+       display: inline-block;
+   }
+
+   .tlacitko1 {
+       margin-right: 10px;
+   }
+
+   .tlacitko2 {
+       margin-left: 10px;
+   }
+
+/* Služby */
+
+   .obsah-ramecek {
+       display: block;
+   }
+
+   .ramecky1 {
+    display: flex;
+    justify-content: space-between;
+    }
+
+    .ramecek1 {
+     flex: 0 0 calc((100% - 40px) / 3);
+    }
+
+   .ramecky2 {
+       display: flex;
+       justify-content: space-between;
+   }
+
+   .ramecek2 {
+        flex: 0 0 calc((100% - 40px) / 3);
+    }
+
+    .ikona {
+         margin: 40px 90px 20px 90px;
+    }
+
+    .ramecek p {
+        margin-top: 0;
+        margin-bottom: 30px;
+        margin-left: 15px;
+        margin-right: 15px;   
+    }
+}
+
+
+@media screen and (min-width: 1100px) {
+
+    body {
+        width: 1080px;
+    }
+
+/* Intro */
+
+    .intro {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .intro-img {
+        width: 425px;
+    }
+
+    .pruh {
+        margin-left: 0;
+    }
+
+    header,
+    .sloupec {
+        flex: 0 0 calc((100% - 60px) / 2);
+    }
+
+    header {
+        order: 2;
+    }
+
+    .sloupec {
+        order: 1;
+        text-align: left;
+    }
+
+/* Služby */
+
+    .obsah-sekce {
+        display: flex;
+        align-items: center;
+    }
+
+    .sluzby-cestovni,
+    .sluzby-delegatu {
+        margin-top: 80px;
+    }
+      
+    .sloupec1 {
+        order: 2;
+    }
+
+    .ramecek {
+        width: 170px;
+    }
+
+    .ramecky1 {
+        order: 1;
+        margin-right: 60px;
+    }
+
+    .ramecky2 {
+        margin-left: 60px;
+    }
+
+    .sloupec1,
+    .sloupec2 {
+        text-align: left;
+        flex-basis: 430px;
+    }
+
+    .ramecky1,
+    .ramecky2 {
+        flex-basis: 550px;
+        margin-top: 0;
+    }
+
+    .text1,
+    .text2 {
+        width: 430px;
+    }
+
+    .ikona {
+        margin: 40px 60px 20px 60px;
+    }
+    
+    .ramecek p {
+        margin-bottom: 40px;
+    }    
+
+}
